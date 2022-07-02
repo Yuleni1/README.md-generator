@@ -5,12 +5,12 @@ const path = require('path');
 const inquirer = require('inquirer');
 // TODO: Create an array of questions for user input
 //question:they put it in a function and this is just an array of objects
-const markdown = require("./utils/generateMarkdown")
+const generateMarkdown = require("./utils/generateMarkdown")
 //they use return inquirer.prompt() and then they put the questions inside? 
 const questions = [
     {
         type:'input',
-        name:'name',
+        name:'title',
         message:'What is your project title?'  
     },
     {
@@ -45,17 +45,21 @@ const questions = [
 //fs.write 
 function writeToFile(fileName, data) {
     return new Promise(()=>{
-    fs.writeFile('README.md',fileName, data, err =>{
+    fs.writeFile(fileName,data, err =>{
 
         if (err) {
-            console.error(err)
+            console.log(err)
             return
         }
+        else{
+            console.log("success")
+        }
     
-        // Log this message if the file was written to successfully
-        console.log('wrote to file successfully')
-  })
-})
+        
+        
+
+});
+});
 }
 
 //is this where they want me to write the html code? 
@@ -66,9 +70,15 @@ function writeToFile(fileName, data) {
 //inquirer.prompt ([ iterate through the questions])
 function init() {
     inquirer.prompt(questions)
+    .then(function(data){
+        writeToFile("README.md", generateMarkdown(data))
+        console.log(data)
+    })
+
 }
 
 // Function call to initialize app
-init();
+init()
+
 
 

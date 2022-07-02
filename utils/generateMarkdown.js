@@ -23,7 +23,12 @@ function renderLicenseSection(license) {}
 //this will have the #, ##, * for the read me file 
 function generateMarkdown(data) {
   return `# ${data.title}
-
+  # Description ${data.description}
+  ## Installation ${data.installation}
+  ## Usage ${data.usage}
+  ## License ${data.license}
+  ## Badges ${data.badges}
+  
 `;
 }
 
