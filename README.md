@@ -42,9 +42,9 @@ Video
 
 ## Technologies Required
 
-*JAVASCRIPT
-*NODE
-*INQUIRER
+* JAVASCRIPT
+* NODE
+* INQUIRER
 
 
 ## Tech Used
