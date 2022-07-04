@@ -1,5 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
+
+
 //error path 
 const path = require('path');
 const inquirer = require('inquirer');
@@ -20,7 +22,7 @@ const questions = [
     },
     {
         type:'input',
-        name:'Installation',
+        name:'installation',
         message:'What are the steps required to install your project?'  
     },
     {
@@ -30,14 +32,21 @@ const questions = [
     },
     {
         type:'input',
-        name:'contribution',
+        name:'contributing',
         message:'Provide contribution guidelines.'  
     },
     {
         type:'input',
         name:'tests',
         message:'Provide examples on how to run tests.'  
-    }
+    },
+    {
+        type:'input',
+        name:'License',
+        message:'Please provide license'
+    },
+    
+
 
 ];
 
@@ -52,12 +61,11 @@ function writeToFile(fileName, data) {
             return
         }
         else{
-            console.log("success")
+            console.log("file has been created")
         }
     
-        
-        
-
+    
+       
 });
 });
 }
@@ -70,7 +78,7 @@ function writeToFile(fileName, data) {
 //inquirer.prompt ([ iterate through the questions])
 function init() {
     inquirer.prompt(questions)
-    .then(function(data){
+    .then(data => {
         writeToFile("README.md", generateMarkdown(data))
         console.log(data)
     })
