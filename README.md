@@ -38,7 +38,7 @@ https://drive.google.com/file/d/1MLXsxfdmSPzQ3wnZRWy2i1PHUkP8vnzD/view
 
 Video
 
-![Video Walkthrough](/utils/Untitled_%20Jul%204%2C%202022%206_46%20PM%20(2).webm)
+![Video Walkthrough](/utils/Untitled_%20Jul%204%2C%202022%206_46%20PM.gif)
 
 ## Technologies Required
 
