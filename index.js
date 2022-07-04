@@ -40,8 +40,15 @@ const questions = [
         type:'checkbox',
         name:'license',
         message:'Please provide license.',
-        choices: ['Apache-2.0','MIT','BSD-2-Clause','gpl-license','lgpl-license',,'MPL-2.0','CDDL-1.0','EPL-2.0','BSD-3-Clause']
+        choices: ['Apache-2.0','MIT','BSD-2-Clause']
     },
+    {
+        type:'checkbox',
+        name:'licenseb',
+        message:'Please reselect license for badge.',
+        choices: ['Apache%202.0-blue.svg','MIT-yellow.svg','BSD%202--Clause-orange.svg']
+    },
+
     {
         type:'input',
         name:'github',

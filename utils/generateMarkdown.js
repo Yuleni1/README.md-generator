@@ -1,10 +1,10 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 
-function renderLicenseBadge(license) {
+function renderLicenseBadge(licenseb) {
 //if they had answered none icon
-  if(license !== "none"){
-    return`![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)` ;
+  if(licenseb !== "none"){
+    return`![GitHub license](https://img.shields.io/badge/license-${licenseb})` ;
   }
   return "";
 
@@ -25,12 +25,12 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
+function renderLicenseSection(license, licenseb) {
   if(license !== "none"){
     return `
 
   ### ${license}
-  - ${renderLicenseBadge(license)}
+ 
   - ${renderLicenseLink(license)}
     `
   }
@@ -40,7 +40,7 @@ function renderLicenseSection(license) {
 //this will have the #, ##, * for the read me file 
 function generateMarkdown(data) {
   return `
-  # ${data.title} ${renderLicenseBadge(data.license)}
+  # ${data.title} ${renderLicenseBadge(data.licenseb)}
 
 
   ## Description
@@ -50,10 +50,10 @@ function generateMarkdown(data) {
   ## Table of Contents
   1. [Installation](#installation)
   2. [Usage](#usage)
-  3. [Lisence](#license)
-  4. [contribution](#contribution)
+  3. [License](#license)
+  4. [Contribution](#contribution)
   5. [Tests](#tests)
-  6. [Questions](#Questions)
+  6. [Questions](#questions)
 
   ## Installation
   ${data.installation}
@@ -63,7 +63,7 @@ function generateMarkdown(data) {
   ${data.usage}
 
 
-  ## Lisence 
+  ## License 
   ${renderLicenseSection(data.license)}
 
 

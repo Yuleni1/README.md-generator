@@ -1,9 +1,9 @@
 
-  # Generate README.md ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+  #  ![GitHub license](https://img.shields.io/badge/license-BSD%202--Clause-orange.svg)
 
 
   ## Description
-  The purpose of this application is to automate the README.md writing process. 
+  
 
 
   ## Table of Contents
@@ -15,37 +15,37 @@
   6. [Questions](#questions)
 
   ## Installation
-  First clone code from my profile title README.md-generator (Please refer to the Questions section). Node and Inquirer are required. 
+  
 
 
   ## Usage 
-  In terminal enter node index.js, then answer questions prompted. README.md will be generated once all questions have been answered. Please refer to screenshot below for an example. ![Screenshot](/utils/Screenshot%202022-07-04%20173319.png)
+  
 
 
   ## License 
   
 
-  ### MIT
-  - ![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)
+  ### BSD-2-Clause
+ 
   - 
-    [License link](https://opensource.org/licenses/MIT)
+    [License link](https://opensource.org/licenses/BSD-2-Clause)
     
     
 
 
   ## Contribution
-  Yuleni Martinez-Valenzuela
+  
 
 
   ## Tests 
-  N/A
+  
 
 
   ## Questions
   ### Github User name:
-  Yuleni1
+  
   ### Github link:
-  [Github Link](https://github.com/Yuleni1)
+  [Github Link](https://github.com/)
   ### Please reach out to me for additional information using the following email: 
-  Myuleni4@gmail.com
+  
 
