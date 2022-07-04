@@ -28,7 +28,7 @@ const questions = [
     {
         type:'input',
         name:'usage',
-        message:'Provide instructions and examples for use.'  
+        message:'Provide instructions and examples for use. Include screenshots as needed.'  
     },
     {
         type:'input',
@@ -41,10 +41,22 @@ const questions = [
         message:'Provide examples on how to run tests.'  
     },
     {
-        type:'input',
+        type:'checkbox',
         name:'license',
-        message:'Please provide license'
+        message:'Please provide license.',
+        choices: ['Apache-2.0','MIT','BSD-2-Clause','gpl-license','lgpl-license',,'MPL-2.0','CDDL-1.0','EPL-2.0','BSD-3-Clause']
     },
+    {
+        type:'input',
+        name:'github',
+        message:'Please enter github user name.'  
+    },
+    {
+        type:'input',
+        name:'email',
+        message:'Please enter email.'  
+    },
+    
 
 
 
