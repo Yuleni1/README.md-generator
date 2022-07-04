@@ -1,51 +1,51 @@
 
-  # Generate ReadMe ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+  # Generate README.md ![GitHub license](https://img.shields.io/badge/license--blue.svg)
 
 
   ## Description
-  afl;kdjf;ak o;iadufasdmfaksdjf 
+  The purpose of this application is to automate the README.md writing process. 
 
 
   ## Table of Contents
   1. [Installation](#installation)
   2. [Usage](#usage)
   3. [Lisence](#license)
-  4. [Contributing](#contributing)
+  4. [contribution](#contribution)
   5. [Tests](#tests)
   6. [Questions](#Questions)
 
   ## Installation
-  aj;disfjaoidfj 
+  First clone code from my profile title README.md-generator (Please refer to the Questions section). Node and Inquirer are required. 
 
 
   ## Usage 
-  akldsjfa;sdifjadf
+  In terminal enter node index.js, then answer questions prompted. README.md will be generated once all questions have been answered. Please refer to screenshot below for an example. ![Screenshot](/utils/Screenshot%202022-07-04%20173319.png)
 
 
   ## Lisence 
   
 
-  ### MIT
-  - ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+  ### 
+  - ![GitHub license](https://img.shields.io/badge/license--blue.svg)
   - 
-    [License link](https://opensource.org/licenses/MIT)
+    [License link](https://opensource.org/licenses/)
     
     
 
 
-  ## Contributing
-  adfaj;osidfjanmdf
+  ## Contribution
+  Yuleni Martinez-Valenzuela
 
 
   ## Tests 
-  adlskfjadiofj 
+  N/A
 
 
   ## Questions
-  ### Github User name
+  ### Github User name:
   Yuleni1
-  ### Github link
-  [Github Link](https://github.com/Yuleni1
-  ### Please reach out to me if additional questions using the following email: 
-  mYuleni4@gmail.com
+  ### Github link:
+  [Github Link](https://github.com/Yuleni1)
+  ### Please reach out to me for additional information using the following email: 
+  Myuleni4@gmail.com
 

@@ -51,7 +51,7 @@ function generateMarkdown(data) {
   1. [Installation](#installation)
   2. [Usage](#usage)
   3. [Lisence](#license)
-  4. [Contributing](#contributing)
+  4. [contribution](#contribution)
   5. [Tests](#tests)
   6. [Questions](#Questions)
 
@@ -67,8 +67,8 @@ function generateMarkdown(data) {
   ${renderLicenseSection(data.license)}
 
 
-  ## Contributing
-  ${data.contributing}
+  ## Contribution
+  ${data.contribution}
 
 
   ## Tests 
@@ -76,11 +76,11 @@ function generateMarkdown(data) {
 
 
   ## Questions
-  ### Github User name
+  ### Github User name:
   ${data.github}
-  ### Github link
+  ### Github link:
   [Github Link](https://github.com/${data.github})
-  ### Please reach out to me if additional questions using the following email: 
+  ### Please reach out to me for additional information using the following email: 
   ${data.email}
 
 `

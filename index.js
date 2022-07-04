@@ -1,14 +1,10 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
-
-
-//error path 
 const path = require('path');
 const inquirer = require('inquirer');
 // TODO: Create an array of questions for user input
-//question:they put it in a function and this is just an array of objects
 const generateMarkdown = require("./utils/generateMarkdown")
-//they use return inquirer.prompt() and then they put the questions inside? 
+
 const questions = [
     {
         type:'input',
@@ -32,8 +28,8 @@ const questions = [
     },
     {
         type:'input',
-        name:'contributing',
-        message:'Provide contribution guidelines.'  
+        name:'contribution',
+        message:'Who contributed in this project?'  
     },
     {
         type:'input',
@@ -82,12 +78,8 @@ function writeToFile(fileName, data) {
 });
 }
 
-//is this where they want me to write the html code? 
-
 
 // TODO: Create a function to initialize app
-//inialize what?
-//inquirer.prompt ([ iterate through the questions])
 function init() {
     inquirer.prompt(questions)
     .then(data => {
