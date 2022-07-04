@@ -42,10 +42,10 @@ const questions = [
     },
     {
         type:'input',
-        name:'License',
+        name:'license',
         message:'Please provide license'
     },
-    
+
 
 
 ];

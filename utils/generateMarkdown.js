@@ -17,9 +17,10 @@ function renderLicenseLink(license) {
 
   if(license !== "none"){
     return `
-    ![License link]( "https://opensource.org/licenses/${license}")
+    ![License link](https://opensource.org/licenses/${license})
     `
   }
+  return "";
 }
 
 // TODO: Create a function that returns the license section of README
@@ -28,7 +29,9 @@ function renderLicenseSection(license) {
   if(license !== "none"){
     return `
 
-    ## License ${data.license}
+  ### ${license}
+  - ${renderLicenseBadge(license)}
+  - ${renderLicenseLink(license)}
     `
   }
 }
@@ -41,9 +44,11 @@ function generateMarkdown(data) {
   ##Table of Contents
   ## Installation ${data.installation}
   ## Usage ${data.usage}
+  ## Lisence ${renderLicenseSection(data.license)}
   ## Contributing ${data.contributing}
   ## Tests ${data.tests}
   ## Questions
+
   
 `
 
